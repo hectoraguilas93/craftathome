@@ -66,21 +66,15 @@ namespace CraftAtHome.Controllers
         {
             using (var context = new ArticleContext())
             {
-
                 Usuario user = context.Usuario.Where(m => m.email == usuario.email).SingleOrDefault();
-
                 if (user != null)
                 {
                     return false;
                 }
                 else {
-
                     return true;
-
                 }
             }
-
-
         }
 
         private string cifrarContraseña(string password)
