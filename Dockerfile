@@ -23,3 +23,6 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "CraftAtHome.dll"]
+
+
+CMD dotnet CraftAtHome.dll --urls "http://*:$PORT"

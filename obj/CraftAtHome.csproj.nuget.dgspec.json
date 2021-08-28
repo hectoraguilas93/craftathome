@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProyectosHector\\Backend\\craftathome\\CraftAtHome\\CraftAtHome.csproj": {}
+    "C:\\Users\\hecto\\Desktop\\backend\\CraftAtHome\\CraftAtHome\\CraftAtHome.csproj": {}
   },
   "projects": {
-    "E:\\ProyectosHector\\Backend\\craftathome\\CraftAtHome\\CraftAtHome.csproj": {
+    "C:\\Users\\hecto\\Desktop\\backend\\CraftAtHome\\CraftAtHome\\CraftAtHome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProyectosHector\\Backend\\craftathome\\CraftAtHome\\CraftAtHome.csproj",
+        "projectUniqueName": "C:\\Users\\hecto\\Desktop\\backend\\CraftAtHome\\CraftAtHome\\CraftAtHome.csproj",
         "projectName": "CraftAtHome",
-        "projectPath": "E:\\ProyectosHector\\Backend\\craftathome\\CraftAtHome\\CraftAtHome.csproj",
+        "projectPath": "C:\\Users\\hecto\\Desktop\\backend\\CraftAtHome\\CraftAtHome\\CraftAtHome.csproj",
         "packagesPath": "C:\\Users\\hecto\\.nuget\\packages\\",
-        "outputPath": "E:\\ProyectosHector\\Backend\\craftathome\\CraftAtHome\\obj\\",
+        "outputPath": "C:\\Users\\hecto\\Desktop\\backend\\CraftAtHome\\CraftAtHome\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
