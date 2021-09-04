@@ -31,6 +31,7 @@ namespace CraftAtHome.Controllers
 
 
         [HttpPost("usuarios")]
+        [Produces("application/json")]
         public string InsertarUsuario(Usuario usuario) {
             try
             {
