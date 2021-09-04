@@ -1,4 +1,4 @@
-name: Deploy Webo
+name: Deploy Web
 on:
   push: 
     branches: [ main ]
@@ -12,4 +12,9 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APPNAME}}
           heroku_email: ${{secrets.HEROKU_USER}}
-          usedocker: true
+          justlogin: true
+      - run: |
+          docker build -t registry.heroku.com/craftathome/web -f CraftAtHome/Dockerfile .
+          docker push registry.heroku.com/craftathome/web
+          heroku container:release web --app craftathome
+      
