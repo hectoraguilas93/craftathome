@@ -20,6 +20,8 @@ namespace CraftAtHome
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.ConfigureKestrel(o =>
+                        o.Listen(System.Net.IPAddress.Any, Convert.ToInt32(Environment.GetEnvironmentVariable("PORT"))));
                     webBuilder.UseStartup<Startup>();
                 });
     }
