@@ -23,6 +23,7 @@ namespace CraftAtHome.Controllers
        
 
         [HttpGet("usuarios")]
+        [Produces("application/json")]
         public IEnumerable<Usuario> Get()
         {
             return GetUsuarios();
@@ -63,22 +64,32 @@ namespace CraftAtHome.Controllers
             }
         }
 
+
+
+        [HttpDelete("usuario")]
+        [Produces("application/json")]
+        public String deleteUsuario(Usuario usuario) {
+
+            using (var context = new ArticleContext())
+            {
+
+                var response = context.Usuario.Remove(usuario);
+                return response.ToString();
+
+
+
+            }
+
+
+
+            }
+
         private bool verificaUsuario(Usuario usuario)
         {
             using (var context = new ArticleContext())
             {
-
                 Usuario user = context.Usuario.Where(m => m.email == usuario.email).SingleOrDefault();
-
-                if (user != null)
-                {
-                    return false;
-                }
-                else {
-
-                    return true;
-
-                }
+                return (user != null) ? false : true ;
             }
 
 
