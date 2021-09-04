@@ -17,4 +17,5 @@ jobs:
           docker build -t registry.heroku.com/craftathome/web -f CraftAtHome/Dockerfile .
           docker push registry.heroku.com/craftathome/web
           heroku container:release web --app craftathome
-      
+          exit 0
+          
