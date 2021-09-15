@@ -74,6 +74,7 @@ namespace CraftAtHome.Controllers
             {
 
                 var response = context.Usuario.Remove(usuario);
+                context.SaveChangesAsync();
                 return response.ToString();
 
 
